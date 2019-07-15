@@ -114,12 +114,12 @@
 	========================
 */
 
-.accordion .card-header:after {
+.gt_accordion .card-header:after {
     font-family: 'FontAwesome';  
     content: "\f068";
     float: right; 
 }
-.accordion .card-header.collapsed:after {
+.gt_accordion .card-header.collapsed:after {
     content: "\f067"; 
 }
 
