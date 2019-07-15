@@ -271,6 +271,14 @@ span {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
+}
+.body-left .logo {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.body-left .logo img {
+  width: 50%;
 }
 
 .body-right {
@@ -715,13 +723,87 @@ nav .gs-product-img a {
 	Left Sticky Menu
 	========================
 */
+.leftSticky-menu {
+  position: relative;
+}
 .leftSticky-menu li {
-  padding: 10px 15px;
+  text-align: center;
+}
+.leftSticky-menu li:hover .gs-sub-menu-list,
+.leftSticky-menu li:hover .gs-sub-menu {
+  top: -50%;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.leftSticky-menu li:hover .gs-sub-menu-list {
+  min-width: 200px;
 }
 .leftSticky-menu a {
   color: white;
+  padding: 10px 15px;
+  display: block;
+}
+.leftSticky-menu a:hover {
+  background: #726c6c;
+}
+.leftSticky-menu .gs-sub-menu li {
+  text-align: left;
+}
+.leftSticky-menu .submenu-main-title,
+.leftSticky-menu .submenu-cat-title,
+.leftSticky-menu .submenu-content-box {
+  color: white;
+}
+.leftSticky-menu .gs-sub-menu-list,
+.leftSticky-menu .gs-sub-menu {
+  position: absolute;
+  top: -30%;
+  right: 0;
+  transform: translateX(100%);
+  background: #374850;
+  transition: 0.5s;
+  z-index: -10;
+  opacity: 0;
+  visibility: hidden;
+}
+.leftSticky-menu .gs-sub-menu-list a,
+.leftSticky-menu .gs-sub-menu a {
+  background: transparent;
+}
+.leftSticky-menu .gs-sub-menu-list a:hover,
+.leftSticky-menu .gs-sub-menu a:hover {
+  color: #726c6c;
+}
+.leftSticky-menu .gs-sub-menu-list a {
+  min-width: 200px;
+  margin: 0 !important;
+  padding: 15px !important;
+}
+.leftSticky-menu .gs-sub-menu-list a:hover {
+  color: white;
+  background: #726c6c;
 }
 
+/*******************************************/
+/********************************************/
+@media (min-width: 1200px) {
+  .body-right #gs-maga-menu {
+    display: none !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .body-left {
+    display: none !important;
+  }
+
+  .body-right {
+    width: 100%;
+  }
+  .body-right #gs-maga-menu {
+    display: block !important;
+  }
+}
 /*******************************************/
 /********************************************/
 @media (max-width: 768px) {
@@ -2384,5 +2466,3 @@ nav .gs-product-img a {
 
 /*******************************************/
 /********************************************/
-
-/*# sourceMappingURL=style.css.map */
