@@ -1,0 +1,40 @@
+/*
+	========================
+	 Table listing Page
+	========================
+*/
+
+#table{
+	padding: 40px 0;
+}
+
+.single_table{
+	border-radius: 4px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 25px;
+	img{
+		width: 100%;
+		max-width: 260px;
+	}
+	p{
+		margin-bottom: 0;
+	}
+	.media-body{
+		padding: 15px 15px 15px 0px;
+	}
+}
+
+@media (max-width: 767px) {
+	.single_table{
+		.media{
+			display: initial;
+			img{
+				display: block;
+				margin: auto;
+			}
+		}
+		.media-body{
+			padding: 15px;
+		}
+	}
+}

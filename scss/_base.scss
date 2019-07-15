@@ -55,6 +55,17 @@ button{
     border-color: $brand_two;
 }
 
+/*==================
+    Button area =====*/
+
+.btn-primary {
+    font-size: 13px;
+    border-radius: 0;
+    background: #374850;
+    border-color: #374850;
+    padding: 6px 30px;
+}
+
 /*
 ==============================
 //    Section Title

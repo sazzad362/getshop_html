@@ -148,6 +148,16 @@ button:focus {
   border-color: #374850;
 }
 
+/*==================
+    Button area =====*/
+.btn-primary {
+  font-size: 13px;
+  border-radius: 0;
+  background: #374850;
+  border-color: #374850;
+  padding: 6px 30px;
+}
+
 /*
 ==============================
 //    Section Title
@@ -1674,13 +1684,6 @@ nav .gs-product-img a {
   box-shadow: none;
   border-color: #726c6c;
 }
-.header-subscribe-popup .gs-subscribe-btn {
-  background: #726c6c;
-  border-color: #726c6c;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 
 .gs-inner-closer {
   position: absolute;
@@ -2384,5 +2387,42 @@ nav .gs-product-img a {
 
 /*******************************************/
 /********************************************/
+/*
+	========================
+	 Table listing Page
+	========================
+*/
+#table {
+  padding: 40px 0;
+}
+
+.single_table {
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+.single_table img {
+  width: 100%;
+  max-width: 260px;
+}
+.single_table p {
+  margin-bottom: 0;
+}
+.single_table .media-body {
+  padding: 15px 15px 15px 0px;
+}
+
+@media (max-width: 767px) {
+  .single_table .media {
+    display: initial;
+  }
+  .single_table .media img {
+    display: block;
+    margin: auto;
+  }
+  .single_table .media-body {
+    padding: 15px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
