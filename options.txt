@@ -1,0 +1,28 @@
+/*
+	-------------------------------------------------------------
+		Slider Presentation & Dots Options Class and Examples
+	-------------------------------------------------------------
+*/
+	/* ---------------------
+		presentation
+	---------------------- */
+	*. presentation-center
+	*. presentation-topLeft
+	*. presentation-topRight
+	*. presentation-bottomLeft
+	*. presentation-bottomRight
+
+	/* ---------------------
+		Dots
+	---------------------- */
+	*. dots-topLeft
+	*. dots-topRight
+	*. dots-bottomLeft
+	*. dots-bottomRight
+
+	/* ---------------------
+		Examples
+	---------------------- */
+		<div class="owl-carousel owl-theme presentation-center dots-topLeft">
+			.....
+		</div>

@@ -1,0 +1,295 @@
+/*
+	========================
+	builder modules Section
+	========================
+*/
+
+.sd_filter{
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 99999999;
+	width: 240px;
+	padding: 35px 10px 50px;
+	background: white;
+	overflow: hidden;
+	overflow-X: hidden;
+	overflow-Y: auto;
+	display: inherit;
+	height: 100vh;
+	margin-right: -241px;
+}
+.sd_filter.filtershow{
+	margin-right: 0px;
+}
+.alpha-bg{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.blog_details_filter{
+	a{
+		background-color: #726c6c;
+		position: fixed;
+		right: -32px;
+		top: 30%;
+		padding: 2px 15px;
+		color: #FFF;
+		border-radius: 0 0 4px 4px;
+		-webkit-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+		z-index: 9999;
+		font-size: 14px;
+	}
+}
+
+#paralax{
+	.parallax-window {
+	    min-height: 80px;
+	    background: transparent;
+	}
+}
+
+/*
+	========================
+		Pricing Table
+	========================
+*/
+#price_area{
+	padding: 40px 0;
+	background: #ddd;
+}
+.ct_price_table{
+	background-color: #fff;
+	text-align: center;
+	transition: all 0.9s ease;
+	.pricing-content{
+		padding: 50px 0 30px;
+		h3{
+			font-size: 35px;
+			font-weight: 600;
+			color: #55A7FE;
+			text-transform: uppercase;
+			margin: 0 0 10px 0;
+		}
+		ul{
+			padding: 0;
+			margin: 0 0 30px 0;
+			list-style: none;
+			li{
+				font-size: 18px;
+				color: rgba(0,0,0,0.3);
+				line-height: 40px;
+				text-transform: capitalize;
+			}
+		}
+		.pricingTable-btn{
+		    display: inline-block;
+		    padding: 8px 50px;
+		    background: #55A7FE;
+		    border-radius: 20px;
+		    font-size: 20px;
+		    color: #fff;
+		    position: relative;
+		    transition: all 0.3s ease 0s;
+		}
+	}
+	&:hover{
+		box-shadow: 0 0 10px rgba(148, 148, 148, 0.8);
+	}
+}
+
+/*
+	========================
+		Accrodion
+	========================
+*/
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    content: "\f067"; 
+}
+
+/*
+	========================
+		Image Effects
+	========================
+*/
+
+#images{
+	padding: 40px 0;
+}
+
+.image_hover{
+	position: relative;
+	overflow: hidden;
+	.text_waper{
+		padding: 15px;
+		position: absolute;
+		top: 0;
+		color: #fff;
+		z-index: 1;
+		opacity: 0;
+		transition: all 0.5s ease;
+		transform: translateX(-50px);
+		p{
+			margin: 0;
+		}
+	}
+	&:after{
+		position: absolute;
+		content: '';
+		background: #000;
+		opacity: 0;
+		transition: all 0.5s ease;
+	}
+	&:hover{
+		.text_waper{
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+}
+
+.eTop{
+	&:after{
+		width: 100%;
+		height: 0;
+		top: 0;
+	}
+	&:hover{
+		&:after{
+			opacity: 0.5;
+			height: 100%;
+		}
+	}
+}
+.eBottom{
+	&:after{
+		width: 100%;
+		height: 0;
+		bottom: 0;
+	}
+	&:hover{
+		&:after{
+			opacity: 0.5;
+			height: 100%;
+		}
+	}
+}
+.eLeft{
+	&:after{
+		width: 0;
+		height: 100%;
+		top: 0;
+		left:0;
+	}
+	&:hover{
+		&:after{
+			opacity: 0.5;
+			width: 100%;
+		}
+	}
+}
+.eRight{
+	&:after{
+		width: 0;
+		height: 100%;
+		top: 0;
+		right:0;
+	}
+	&:hover{
+		&:after{
+			opacity: 0.5;
+			width: 100%;
+		}
+	}
+}
+
+.img_transform{
+	img{
+		transition: all 0.5s ease;
+	}
+	&:hover{
+		img{
+			transform: scale(1.2);
+		}
+	}
+}
+.img_transform_rotate{
+	img{
+		transition: all 0.5s ease;
+	}
+	&:hover{
+		img{
+			transform: rotate(5deg) scale(1.2);
+		}
+	}
+}
+
+/*
+	========================
+		testimonial-slider
+	========================
+*/
+
+.ct_testimonial{
+	background: #fff; /* Adjust color Here */
+	text-align: center;
+	padding: 40px 10px;
+	border-radius: 5px;
+	.pic{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto;
+		img{
+			width: 100%;
+			height: auto;
+			filter: grayscale(100%);
+		}
+	}
+	.testimonial-title {
+	  font-size: 16px;
+	  color: #9e9e9e; /* Adjust color Here */
+	  letter-spacing: 3px;
+	  text-transform: uppercase;
+	  margin-bottom: 0;
+	  margin-top: 15px;
+	}
+	.post {
+	  display: block;
+	  font-size: 12px;
+	  font-style: italic;
+	  color: #bcbcbc; /* Adjust color Here */
+	  margin-top: 10px;
+	  text-transform: uppercase;
+	}
+	.description {
+	  font-size: 15px;
+	  font-style: italic;
+	  color: #86868a; /* Adjust color Here */
+	  line-height: 1.8;
+	  margin-top: 10px;
+	}
+}
+
+/*
+	========================
+		Progress Bars
+	========================
+*/

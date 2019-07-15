@@ -1,0 +1,188 @@
+/**
+ * ---------------------------------------------------------------------------
+ * 01. Base Styles.
+ * ---------------------------------------------------------------------------
+ */
+
+body{
+    font-family: $base-font;
+    font-size: 15px;
+    line-height: 25px;
+    color: $text;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-family: $base-font;
+}
+
+a{
+    transition: 0.5s;
+    &:hover{
+        text-decoration: none;
+    }
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button{
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+/*
+==============================
+//    Colors
+==============================
+*/
+.gs_bg_brand_one{
+    background: $brand_one;
+    border-color: $brand_one;
+}
+
+.gs_bg_brand_two{
+    background: $brand_two;
+    border-color: $brand_two;
+}
+
+/*
+==============================
+//    Section Title
+==============================
+*/
+
+.gs-section-title{
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $brand_one;
+    text-align: center;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 1px;
+        width: 100%;
+        background: #e9e9e9;
+        transform: translateY(-50%);
+    }
+    p{
+        display: inline-block;
+        padding: 0 15px;
+        background: $white;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+/*
+==============================
+//    Product Count Option
+==============================
+*/
+.qty{
+    width: 120px;
+    display: inline-block;
+}
+
+.qty .count {
+    color: $black;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 2px;
+    min-width: 35px;
+    text-align: center;
+}
+.qty .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: $white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    // border-radius: 50%;
+    }
+.qty .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: $white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    // border-radius: 50%;
+    background-clip: padding-box;
+}
+// div {
+//     text-align: center;
+// }
+.minus:hover{
+    background-color: $brand_one !important;
+}
+.plus:hover{
+    background-color: $brand_one !important;
+}
+/*Prevent text selection*/
+span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.qty input{  
+    border: 0;
+    width: 2%;
+}
+
+.qty input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.qty input:disabled{
+    background-color:white;
+}
+
+.minus,
+.plus{
+    background: $brand_two;
+}
+
+
+
+/*
+==============================
+//    Body Control
+==============================
+*/
+.body-left{
+    // float: left;
+    width: 20%;
+    height: 100%;
+    background: $brand_two;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.body-right{
+    width: 80%;
+    float: right;
+}

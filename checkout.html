@@ -1,0 +1,939 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GetShop</title>
+    <meta name="description" content="Badhon Khan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!--
+      ==============================
+        Load Main Stylesheet File
+      ==============================
+    -->
+    <link rel="stylesheet" href="css/pushy.css">    
+    <link rel="stylesheet" href="css/style.css">    
+
+    <!--
+      ==========================
+        Load Modernizr File
+      ==========================
+    -->
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <!--
+      ==========================
+        Core Dependency
+      ==========================
+    -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <!-- 
+        ==================================
+            Header Subscribe Popup
+        ==================================
+    -->
+<!--     <div class="header-subscribe-popup">
+
+        <div id="myModalCenter" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content container">
+                <button type="button" class="close p-1 d-none d-md-block gs-inner-closer" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6">
+                        <button type="button" class="close p-1 d-md-none" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img class="img-fluid" src="img/subscribe.jpg" alt="subscribe image">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="subscribe-content">
+                            <div class="subscribe-title">
+                                Subscribe to our newsletter
+                            </div>
+                            <div class="subscribe-text-content">
+                                <p>Signup for our weekly newsletter to get the latest news, updates and amazing offers delivered directly in your inbox.</p>
+                            </div>
+                        
+                            <div class="subscribe-form">
+                                <form class="container p-0">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-8 pr-lg-0">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Enter you email">
+                                              </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4">
+                                            <button type="button" class="btn btn-primary gs-subscribe-btn">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                setTimeout(function(){
+                    $('#myModalCenter').modal('show');
+                },1000);
+            })
+        </script>
+
+    </div> -->
+
+
+
+    <!-- 
+        ==================================
+            Header top
+        ==================================
+    -->
+    <section id="gs-header-top" class="d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xl-4 p-0">
+                    <div class="gs-block">
+                        <div class="gs-header-contact">
+                            <ul class="d-flex">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        +442077909707
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-envelope"></i>
+                                        shakirblouch@yahoo.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 d-md-none d-xl-block">
+                    <div class="gs-block">
+                        <ul class="gs-header-social-media-list d-flex justify-content-center">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4">
+                    <div class="gs-block">
+                        <div class="gs-shop-card">
+                            <ul class="d-flex justify-content-end">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Cart
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-unlock-alt"></i>
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        ==================================
+            Create Nav
+        ==================================
+    -->
+    <div id="header-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <nav>
+                        <div id="gs-maga-menu" class="stellarnav">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="login">
+                                </a>
+                            </div>
+                            <ul>
+                                <li class="drop-right">
+                                    <a href="index.html">Home</a> 
+                                </li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li class="gs-maga"><a href="#">Maga</a>
+                                    <ul class="show-maga">
+                                        <li>
+                                            <div class="container m-md-0 m-lg-auto">
+                                                <div class="row">
+                                                    <div class="col-sm-1 col-md-12">
+                                                        <h5 class="submenu-main-title">Submenu Parent Title</h5>
+
+                                                        <div class="d-lg-flex justify-content-lg-between">
+                                                        
+                                                            <div class="submenu-link-box">
+                                                                <h5 class="submenu-cat-title">Browse</h5>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                            </div>
+                                                            <div class="submenu-link-box">
+                                                                <h5 class="submenu-cat-title">Browse 2</h5>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                            </div>
+                                                            <div class="submenu-link-box">
+                                                                <h5 class="submenu-cat-title">Browse 3</h5>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                                <a class="submenu-links" href="#">Item 1</a>
+                                                            </div>
+                                                            <div class="submenu-link-box">
+                                                                <h5 class="submenu-cat-title">Browse 3</h5>
+                                                                <div class="submenu-content-box pb-3">
+                                                                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aspernatur ex possimus pariatur quos fugiat, similique mollitia minus corporis.</p>
+                                                                    <img src="img/img2.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>    
+                                </li>
+                                <li class="gs-maga"><a href="#">Products</a>
+                                    <ul class="show-maga">
+                                        <li>
+                                            <div class="container m-md-0 m-lg-auto">
+                                                <div class="row">
+
+                                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                                        <h5 class="submenu-cat-title">Browse</h5>
+                                                        <a class="p-0" href="#"><img src="img/slider.jpg" class="img-fluid pt-4 mb-4" alt=""></a>
+                                                        <a class="p-0" href="#"><img src="img/slider.jpg" class="img-fluid mb-4" alt=""></a>
+                                                    </div>
+                                                    <div class="col-sm-1 col-md-4 col-lg-4">
+                                                        <div class="submenu-link-box">
+                                                            <h5 class="submenu-cat-title">Browse</h5>
+                                                            <a class="p-0" href="#"><img src="img/slider.jpg" class="img-fluid pt-4 mb-4" alt=""></a>
+                                                            <a class="p-0" href="#"><img src="img/slider.jpg" class="img-fluid mb-4" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-1 col-md-4 col-lg-4">
+                                                        <article class="gs-product-box gs-product-box-two gs-product-height-auto text-center">
+                                                            <div class="product-wrapper">
+                                                                <div class="gs-product-img">
+                                                                    <a href="#"><img class="img-fluid" src="img/p2-img.jpg" alt=""></a>
+                                                                </div>
+
+                                                                <div class="gs-product-price">
+                                                                    <a class="p-0" href="#"><strong> &pound;10</strong></a>
+                                                                </div>
+
+                                                                <div class="gs-product-text pt-0">
+                                                                    <a class="p-0" href="#"><p class="mt-2">WOMENS SATIN DIAMANTE CLUTCH </p></a>
+                                                                </div>
+
+                                                                <div class="pt-3 pb-3"></div>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>    
+                                </li>
+                                <li class="drop-left">
+                                    <a href="blog.html">Blog</a>
+                                    <ul>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a>
+                                            <ul>
+                                                <li><a href="#">Drop left menu item</a></li>
+                                                <li><a href="#">Drop left menu item</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- <div class="gs-shop-card d-md-none">
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    Cart
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-unlock-alt"></i>
+                                    Login
+                                </a>
+                            </div> -->
+                        </div>
+                    </nav>    
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="js/stellarnav.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.stellarnav').stellarNav({ position: 'right' });
+                var gsMagaMenu = $('#gs-maga-menu').innerWidth();
+                // var gsMagaMenu = $('#gs-maga-menu').innerWidth();
+                $('#gs-maga-menu .gs-maga ul.show-maga')
+                .css("width", gsMagaMenu);
+            });// DOM Ready
+        </script>
+
+
+    <!-- 
+        ==================================
+            Create Nav
+        ==================================
+    -->
+    <section class="gs-blog-hero text-center" style="background: url('img/slider.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <h3 class="gs-blog-hero-title">Checkout</h3>
+                    <ul class="gs-breadcrumb d-flex justify-content-center">
+                        <li><a href="#">Home</a></li>
+                        <li class="separator">/</li>
+                        <li><a href="#">Checkout</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 
+        ==================================
+            Checkout Content
+        ==================================
+    -->
+
+    <section id="gs-checkout-area" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="checkout-accrodion">
+                        <div class="accordion" id="accordionExample">
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link checkout-accrodion-title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Step <span>1</span>: checkout options
+                                </button>
+                              </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+
+                                <div class="gs-checkout-block">
+                                    <div class="gs-select-radio-btn">
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" id="inlineradio1" name="radio[]" value="option1">
+                                          <label class="form-check-label" for="inlineradio1">Login/Sign Up</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" id="inlineradio2" name="radio[]" value="option2">
+                                          <label class="form-check-label" for="inlineradio2">Check out as guest</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="gs-checkout-email mb-3 d-none">
+                                        <input class="form-control" type="Email" placeholder="Email">
+                                    </div>
+
+                                    <div class="gs-checkout-option-content">
+                                        <p class="m-0">Please use Register And Checkout to easily get access to your order history, or use Checkout as Guest</p>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary gs-checkout-stap-btn">Next</button>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed  checkout-accrodion-title" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Step <span>2</span>: ADDRESSES
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                              <div class="card-body">
+                                
+                                <div class="gs-checkout-block">
+                                    <h6 class="gs-billing-title">Billing address:</h6>
+                                    <form>
+                                      <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter email">
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="First Name *">
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last Name *">
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Phone *">
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Company">
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Address line 1 *">
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Address line 2">
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Zip / Postal Code *">
+                                      </div>
+                                      <div class="container p-0">
+                                          <div class="row p-0">
+                                              <div class="col-md-4">
+                                                  <div class="form-group">
+                                                      <label for="exampleFormControlSelect1">Country</label>
+                                                      <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option selected disabled>Select Country</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                      </select>
+                                                    </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                  <div class="form-group">
+                                                      <label for="exampleFormControlSelect1">State</label>
+                                                      <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option selected disabled>No State found</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                      </select>
+                                                    </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                  <div class="form-group">
+                                                      <label for="exampleFormControlSelect1">City</label>
+                                                      <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option selected disabled>No City found</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                      </select>
+                                                    </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Shipping to same billing address</label>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Leave a note (optional):</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Include any additional requirements, ie. special notes for delivery"></textarea>
+                                      </div>
+
+                                      <button type="submit" class="btn btn-primary gs-checkout-stap-btn">Next</button>
+                                    </form>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed  checkout-accrodion-title" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Step <span>3</span>: SHIPPING METHOD
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="gs-checkout-block">
+                                    <div class="gs-select-radio-btn">
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" id="inlineradio1" name="radio[]" value="option1">
+                                          <label class="form-check-label" for="inlineradio1">Express -- Delivered by UPS <strong>(£0.00)</strong></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" id="inlineradio2" name="radio[]" value="option2">
+                                          <label class="form-check-label" for="inlineradio2">Regular -- Deliverd in 15 days <strong>(£5.00)</strong></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" id="inlineradio3" name="radio[]" value="option2">
+                                          <label class="form-check-label" for="inlineradio3">One day Shipping -- Shipped by UPS <strong>(£20.00)</strong></label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary gs-checkout-stap-btn">Next</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingFure">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed  checkout-accrodion-title" type="button" data-toggle="collapse" data-target="#collapseFure" aria-expanded="false" aria-controls="collapseFure">
+                                  Step <span>4</span>: REVIEW CART
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFure" class="collapse" aria-labelledby="headingFure" data-parent="#accordionExample">
+                              <div class="card-body">
+                                
+                                <div class="shopping-cart-area p-0">
+                                    <div class="container">
+
+                                        <!-- Shopping Cart Table -->
+                                        <div class="shopping-cart-list text-center">
+                                            <table class="table table-bordered mb-4">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Image</th>
+                                                        <th scope="col">Product</th>
+                                                        <th scope="col">Price</th>
+                                                        <th scope="col">Quantity</th>
+                                                        <th scope="col">Special Shipping Method</th>
+                                                        <th scope="col">Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#" class="gs-cart-productimage">
+                                                                <img src="img/product-image-1-thumb.jpg" alt="product image">
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="gs-cart-productname">Stylist
+                                                                daimond
+                                                                earring</a>
+                                                        </td>
+                                                        <td class="gs-cart-price">$75.00</td>
+                                                        <td>
+                                                            2
+                                                        </td>
+                                                        <td>
+                                                            Special Shipping Method
+                                                        </td>
+                                                        <td>
+                                                            <span class="gs-cart-totalprice">$75.00</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#" class="gs-cart-productimage">
+                                                                <img src="img/product-image-2-thumb.jpg" alt="product image">
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="gs-cart-productname">Stylist
+                                                                daimond
+                                                                earring</a>
+                                                        </td>
+                                                        <td class="gs-cart-price">$75.00</td>
+                                                        <td>
+                                                            3
+                                                        </td>
+                                                        <td>
+                                                            Special Shipping Method
+                                                        </td>
+                                                        <td>
+                                                            <span class="gs-cart-totalprice">$75.00</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--// Shopping Cart Table -->
+
+                                        <button type="submit" class="btn btn-primary gs-checkout-stap-btn">Next</button>
+
+                                        <!-- Shopping Cart Content -->
+                                        <div class="gs-cart-bottomarea">
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-6"></div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="gs-cart-pricebox">
+                                                        <h2 class="cart-total-title">Totals</h2>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-borderless">
+                                                                <tbody>
+                                                                    <tr class="gs-cart-pricebox-subtotal">
+                                                                        <td>Cart Subtotal</td>
+                                                                        <td>$175.00</td>
+                                                                    </tr>
+                                                                    <tr class="gs-cart-pricebox-shipping">
+                                                                        <td>(+) Shipping Charge</td>
+                                                                        <td>$15.00</td>
+                                                                    </tr>
+                                                                    <tr class="gs-cart-pricebox-total">
+                                                                        <td>Total</td>
+                                                                        <td>$190.00</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--// Shopping Cart Content -->
+
+                                    </div>
+                                </div>
+                                
+
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingFive">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed  checkout-accrodion-title" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  Step <span>4</span>: PAYMENT
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                              <div class="card-body">
+
+                                <div class="gs-get-way">
+
+                                    <div class="gs-get-way-img">
+                                        <img class="img-fluid" src="img/pay_saz.png" alt="get way">
+                                    </div>
+                                
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                      <label class="form-check-label" for="exampleRadios1">
+                                        Pay £980.00 By PayPal
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                        Pay £980.00 By Card
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                                      <label class="form-check-label" for="exampleRadios3">
+                                        Cash On delivery
+                                      </label>
+                                    </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+        ==================================
+            Footer
+        ==================================
+    -->
+
+    <section id="gs-subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-7 d-flex justify-content-center">
+
+                    <form class="form-inline">
+                        <div class="form-group mb-md-2 mb-lg-0 d-flex justify-content-center">
+                            <p class="gs-subscribe-title m-0">subscribe</p>
+                        </div>
+                        <div class="form-group mx-lg-3 mb-md-2 mb-lg-0">
+                            <label for="subscribeEmail" class="sr-only">subscribe</label>
+                            <input type="email" class="form-control" id="subscribeEmail" placeholder="Your e-mail address">
+                        </div>
+                        <button type="submit" class="btn btn-primary">subscribe</button>
+                    </form>
+
+                </div>
+                <div class="col-md-6 col-lg-5 d-flex align-items-center justify-content-center">
+
+                    <ul class="gs-social-media-list d-flex">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-vimeo-square"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gs-footer-menu-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <ul class="gs-footer-content d-md-flex flex-md-wrap flex-lg-nowrap">
+                        <li class="gs-footer-content-block">
+                            <div class="gs-footer-block">
+                                <a href="#">
+                                    <div 
+                                        class="gs-footer-company-logo"
+                                        style="background-image: url('img/logo.png');" 
+                                    ></div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gs-footer-content-block">
+                            <div id="menuOne" class="gs-footer-block">
+                                <div class="gs-footer-block-title">
+                                    INFORMATION
+                                </div>
+                                <ul class="footer-sub-menu">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">FAQ’s</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gs-footer-content-block">
+                            <div id="menuTwo" class="gs-footer-block">
+                                <div class="gs-footer-block-title">
+                                    SERVICE
+                                </div>
+                                <ul class="footer-sub-menu">
+                                    <li><a href="#">Cookie Policy</a></li>
+                                    <li><a href="#">Why Getshop</a></li>
+                                    <li><a href="#">page 12</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gs-footer-content-block">
+                            <div id="menuThree" class="gs-footer-block">
+                                <div class="gs-footer-block-title">
+                                    QUICK SHOP
+                                </div>
+                                <ul class="footer-sub-menu">
+                                    <li><a href="#">Midi Dresses</a></li>
+                                    <li><a href="#">Maxi Dresses</a></li>
+                                    <li><a href="#">Bodycon Dresses</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gs-footer-content-block">
+                            <div id="menuFour" class="gs-footer-block">
+                                <div class="gs-footer-block-title">
+                                    COMPANY INFO
+                                </div>
+                                <ul class="footer-sub-menu">
+                                    <li><a href="#">58 Nelson street</a></li>
+                                    <li><a href="#">+442077909707</a></li>
+                                    <li><a href="#">shakirblouch@yahoo.com</a></li>
+                                    <li><a href="#">shope.skype</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function() {
+            if($(window).width() < 450){
+                $( "#menuOne" ).on( "click", function() {
+                  $( this ).toggleClass( "open" );
+                });
+                $( "#menuTwo" ).on( "click", function() {
+                  $( this ).toggleClass( "open" );
+                });
+                $( "#menuThree" ).on( "click", function() {
+                  $( this ).toggleClass( "open" );
+                });
+                $( "#menuFour" ).on( "click", function() {
+                  $( this ).toggleClass( "open" );
+                });
+            }
+        });// DOM Ready
+    </script>
+
+
+    <!-- <section id="gs-footer-top-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="gs-company-policies">
+                        <ul class="d-md-flex flex-md-wrap">
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Refund Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing System</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="gs-company-information">
+                        <ul class="d-md-flex flex-md-wrap justify-content-md-end">
+                            <li>
+                                <a href="#">Company Information</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-md-flex justify-content-md-start">
+                    <p class="m-0">COPYRIGHT &copy; 2019 C CODE LTD. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="col-md-6 d-md-flex justify-content-md-end">
+                    <p class="mb-0 mt-2 mt-md-0">WITH LOVE <i class="fa fa-heart"></i> FROM GET SHOP TODAY</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--
+      ===============================
+        Active Plugins Main File
+      ===============================
+    -->
+    <!-- <script src="js/app.js"></script> -->
+    
+  </body>
+</html>
+
+

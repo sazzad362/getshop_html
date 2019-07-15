@@ -1,0 +1,383 @@
+/*
+	========================
+	Product
+	========================
+*/
+
+	.gs-product-height-auto{
+		min-height: auto !important;
+	}
+	.gs-addTocard-btn{
+		font-size: 13px;
+		border-radius: 0;
+		background: $brand_two;
+		border-color: $brand_two;
+		padding: 6px 30px;
+	}
+
+	#xzoom-default {
+		width: 100% !important;
+	}
+
+	.gs-product-box{
+		// min-height: 400px;
+		position: relative;
+		transition: 0.5s;
+		margin-bottom: 30px;
+		&:hover{
+			transform: translateY(-20px);
+			.gs-product-text{
+				padding: 30px 15px 0;
+			}
+			.wishlist{
+				height: 46px;
+				padding: 10px 0;
+			}
+
+			.wrapper{
+				margin-top: -30px;
+			}
+
+			.gs-product-btns a {
+				opacity: 1;
+				&:nth-child(odd) {
+					transform: translateX(-3px);
+				}
+				&:nth-child(even) {
+				  transform: translateX(3px);
+				}
+			}
+			.gs-product-price{
+				color: $brand_two;
+			}
+		}
+	}
+	.product-wrapper{
+		border: 1px solid #ddd;		
+	}
+	.gs-product-text{
+		position: relative;
+		padding: 15px 15px 0;
+		transition: 0.5s;
+
+		p{
+			margin: 0;
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+	.gs-product-price{
+		padding: 8px 0;
+		font-size: 25px;
+		font-weight: 300;	
+		transition: 0.5s;
+		strong{
+			font-size: 18px;
+		}
+	}
+	.wishlist{
+		font-size: 14px;
+		border: 1px solid #ddd;
+		border-top: 0;
+		// padding: 10px 0;
+		position: absolute;
+		width: 100%;
+		transition: 0.5s;
+
+		height: 0;
+	    overflow: hidden;
+	    padding: 0;
+
+	    a{
+	    	transition: 0.5s;
+	    	display: inline-block;
+	    	font-size: 13px;
+	    	text-transform: uppercase;
+	    	color: #adadad;
+	    }
+	}
+
+	.gs-product-btns{
+		left: 0;
+		top: -35%;
+		position: absolute;
+		height: 50px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.gs-product-btns a {
+		font-size: 20px;
+		transition: 0.8s;
+		color: $white;
+		opacity: 1;
+		&:nth-child(odd) {
+			transform: translateX(-250px);
+		}
+		&:nth-child(even) {
+		  transform: translateX(250px);
+		}
+	}
+
+	.gs-product-view,
+	.gs-product-quick-viewing{
+		width: 50px;
+		height: 50px;
+		background: #ddd;
+		border-radius: 100%;
+	}
+
+	.gs-product-view{
+		background: $brand_one;
+	}
+
+	.gs-product-quick-viewing{
+		background: $brand_two;
+	}
+
+	.wrapper{
+		background: $white;
+		position: relative;
+		z-index: 2;
+		transition: 0.5s;
+	}
+
+
+
+/*******************************************/
+// Product box two
+/********************************************/
+
+	.gs-product-box-two{
+		&:hover{
+			box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		}
+		.product-wrapper{
+			border: 0px;
+		}
+		.gs-product-price {
+			padding: 12px 0 5px;
+			strong{
+				font-size: 25px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.gs-product-btn{
+		font-size: 14px;
+		background: $pd_btn_color;
+		border-color: $pd_btn_color;
+		color: $text;
+		border-radius: 0;
+		&:hover{
+			background: $brand_one;
+			border-color: $brand_one;
+		}
+	}
+
+
+
+/*******************************************/
+// Product box two 2
+/********************************************/
+
+.gs-tab-product{
+	background: #40403E;
+	margin-bottom: 30px;
+	.active{
+		background-color: transparent !important;
+		border-color: transparent !important;
+		color: $white !important;
+	}
+	a{
+	    color: #B3AFA8 !important;
+	    &:hover{
+	    	border-color: transparent !important;
+	    	color: $white !important;
+	    }
+	}
+}
+
+
+/*******************************************/
+// Product details page
+/********************************************/
+
+#gs-products-details{
+
+	.gs-product-title{
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.gs-product-price{
+		color: $brand_one;
+	}
+
+	#xzoom-thumbs{
+		position: relative;
+	}
+
+	// -----------------------
+	// 		owl Carousel
+	// -----------------------
+	.owl-nav{
+		display: flex;
+		justify-content: space-between;
+		button{
+			background: $brand_one;
+			color: $white;
+			line-height: 1;
+			font-size: 25px;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 36%;
+			transform: translateY(-50%);
+			opacity: 0.8;
+		}
+		.owl-next{
+			right: 0;
+		}
+	}
+
+	.gs-tab-product{
+	    margin-bottom: 15px;
+		.nav-tabs{
+			a{
+				width: 100%;
+			}
+		}
+	}
+
+	.product-details-tab{
+
+	}
+	
+	label{
+		font-size: 14px;
+	}
+	
+	select,
+	textarea,
+	input{
+		border-radius: 0;
+		border-color: #d3d3d3;
+		transition: 0.5s;
+		font-size: 14px;
+		&:focus{
+			box-shadow: none;
+			border-color: $brand_one;
+		}
+	}
+
+	.gs_bg_brand{
+		font-size: 14px;
+	}
+}
+
+#gs-recommended{
+	position: relative;
+}
+
+
+
+/*******************************************/
+// Custom Query
+/********************************************/
+@media (min-width: 350px) {
+
+		.gs-product-box{
+			// min-height: 440px;
+		}
+
+}
+@media (min-width: 400px) {
+
+		.gs-product-box{
+			// min-height: 480px;
+		}
+
+}
+
+/*******************************************/
+// Medium devices (tablets, less than 768px)
+/********************************************/
+@media (min-width: 768px) {
+
+	#gs-products-details {
+		.gs-tab-product {
+			.nav-tabs {
+				a{
+					width: auto;
+				    padding: 5px;
+				    font-size: 14px;
+				}
+			}
+		}
+	}
+
+	#gs-recommended{
+		.owl-nav {
+			button{
+				opacity: 1;
+			}
+			.owl-prev{
+				left: -40px;
+			}
+			.owl-next{
+				right: -40px;
+			}
+		}
+	}
+
+}
+
+
+/*******************************************/
+// Large devices (desktops, 992px and up)
+/********************************************/
+@media (min-width: 992px) {
+
+	#gs-products-details {
+		.gs-tab-product {
+			.nav-tabs {
+				a{
+					padding: .5rem 1rem;
+				}
+			}
+		}
+	}
+
+}
+
+
+/*******************************************************/
+// Extra large devices (large desktops, 1200px and up)
+/*******************************************************/
+@media (min-width: 1200px) {
+	
+	#gs-products-details {
+
+	}
+
+	#gs-recommended{
+		.owl-nav {
+			button{
+				width: 40px;
+				height: 40px;
+				opacity: 1;
+			    font-size: 30px;
+			}
+			.owl-prev{
+				left: -50px;
+			}
+			.owl-next{
+				right: -50px;
+			}
+		}
+	}
+
+}

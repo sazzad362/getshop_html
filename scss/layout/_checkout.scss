@@ -1,0 +1,110 @@
+/*
+	========================
+	Cart Section
+	========================
+*/
+.gs-blog-hero{
+	.separator{
+		margin: 0 10px;
+	}
+	.gs-breadcrumb{
+		a{
+			color: $white;
+			&:hover{
+				color: $brand_one;
+			}
+		}		
+	}
+}
+
+#gs-checkout-area{
+	.checkout-accrodion-title{
+		text-transform: uppercase;
+		color: $text;
+		font-weight: 600;
+	}
+	.gs-billing-title{
+		font-size: 14px;
+		margin-bottom: 20px;
+		color: $brand_one;
+	}
+	.gs-checkout-block{
+		.gs-select-radio-btn{
+			margin-bottom: 10px;
+			.form-check-input{
+				margin-right: 5px;
+			}
+			strong{
+				color: $brand_one;
+			}
+		}
+
+		input,
+		textarea,
+		select{
+			border-radius: 0;
+			font-size: 14px;
+			&:focus{
+				box-shadow: none;
+				border-color: $brand_two;
+			}
+		}
+	}
+
+	.gs-checkout-option-content{
+		background: #f4f4f4;
+		border: 1px solid #eeeeee;
+		color: #979797;
+		padding: 10px 10px;
+		margin: 0 0 15px 0;
+	}
+
+	.gs-checkout-stap-btn{
+		font-size: 14px;
+		background: $brand_one;
+		border-color: $brand_one;
+		&:focus{
+			box-shadow: none;
+		}
+	}
+
+	.card-header{
+		background: transparent;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.shopping-cart-list{
+		img{
+			max-width: 50px;
+		}
+	}
+
+	.gs-get-way{
+		.gs-get-way-img{
+			margin-bottom: 20px;
+			max-width: 400px;
+		}
+		.form-check-input{
+			margin-right: 5px;
+		}
+		.form-check{
+			margin-bottom: 5px;
+		}
+	}
+
+	.shopping-cart-list td{
+		    width: 213px;
+	        margin: 0 auto;
+	}
+}
+
+
+
+/*******************************************/
+// Medium devices (tablets, less than 768px)
+/********************************************/
+@media (max-width: 600px) {
+
+
+}

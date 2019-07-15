@@ -1,0 +1,137 @@
+/*
+	========================
+	Cart Section
+	========================
+*/
+.gs-blog-hero{
+	.separator{
+		margin: 0 10px;
+	}
+	.gs-breadcrumb{
+		a{
+			color: $white;
+			&:hover{
+				color: $brand_one;
+			}
+		}		
+	}
+}
+
+.shopping-cart-area{
+	padding: 100px 0;
+	.shopping-cart-list{
+		input{
+			&:focus{
+				box-shadow: none;
+				border-color: $brand_one;
+			}
+		}
+		a{
+			color: $text;
+		}
+		td{
+			vertical-align: middle;
+		}
+		.gs-cart-removeproduct{
+			background: transparent;
+			border: 0;
+		}
+		.gs-quantitybox{
+			position: relative;
+			display: inline-block;
+			width: 80px;
+		    margin: 0 auto;
+			input{
+				padding-left: 5px;
+				padding-right: 30px;
+				text-align: center;
+				height: 50px;
+				width: 100%;
+				vertical-align: middle;
+				border-radius: 4px;
+				background: 0 0;
+				border: 1px solid #ebebeb;
+				transition: all .4s ease-out 0s;
+				color: #707070;
+			}
+		}
+
+		.gs-quantitybox-button.decrement-button{
+			top: auto;
+			    bottom: 0;
+
+			    position: absolute;
+			    right: 0;
+			    border: 1px solid #ebebeb;
+			    height: 25.5px;
+			    width: 25px;
+			    line-height: 23px;
+			    text-align: center;
+			    cursor: pointer;
+		}
+		.gs-quantitybox-button.increment-button{
+			position: absolute;
+			right: 0;
+			top: 0;
+			border: 1px solid #ebebeb;
+			height: 25.5px;
+			width: 25px;
+			line-height: 23px;
+			text-align: center;
+			cursor: pointer;
+		}
+	}
+
+
+	.gs-coupon-box{
+		width: 100%;
+	}
+
+	.gs-cart-pricebox{
+		background: #f9f9f9;
+		padding: 15px;
+		.cart-total-title{
+		    font-size: 20px;
+		}
+		table{
+			border: 1px solid #ddd;
+			tr{
+				border-bottom: 1px solid #ddd;
+				&:last-child{
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+	
+}
+
+
+
+/*******************************************/
+// Medium devices (tablets, less than 768px)
+/********************************************/
+@media (max-width: 600px) {
+
+	.shopping-cart-area{
+		.shopping-cart-list{
+			thead{
+				display: none;
+			}
+			tr{
+				border-bottom: 1px solid #ddd;
+			}
+			td{
+				flex-direction: column;
+				display: flex;
+				width: 287px;
+				border:0;
+				padding: 13px 0 0;
+				&:last-child{
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+
+}

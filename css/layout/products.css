@@ -1,0 +1,93 @@
+/*
+	========================
+	Product
+	========================
+*/
+#gs-products .gs-product-box {
+  margin-bottom: 40px;
+  position: relative;
+  transition: 0.5s;
+}
+#gs-products .gs-product-box:hover {
+  transform: translateY(-30px);
+}
+#gs-products .gs-product-box:hover .gs-product-text {
+  padding: 30px 15px 0;
+}
+#gs-products .gs-product-box:hover .wishlist {
+  height: 46px;
+  padding: 10px 0;
+}
+#gs-products .gs-product-box:hover .gs-product-btns a {
+  opacity: 1;
+}
+#gs-products .gs-product-box:hover .gs-product-btns a:nth-child(odd) {
+  transform: translateX(-3px);
+}
+#gs-products .gs-product-box:hover .gs-product-btns a:nth-child(even) {
+  transform: translateX(3px);
+}
+#gs-products .product-wrapper {
+  border: 1px solid #ddd;
+}
+#gs-products .gs-product-text {
+  position: relative;
+  padding: 15px 15px 0;
+  transition: 0.5s;
+}
+#gs-products .gs-product-text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+}
+#gs-products .gs-product-price {
+  padding: 15px 0;
+  font-size: 25px;
+  font-weight: 300;
+}
+#gs-products .wishlist {
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-top: 0;
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+#gs-products .wishlist a {
+  transition: 0.5s;
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #adadad;
+}
+#gs-products .gs-product-btns {
+  left: 0;
+  top: -35%;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+}
+#gs-products .gs-product-btns a {
+  font-size: 20px;
+  transition: 0.8s;
+  opacity: 1;
+}
+#gs-products .gs-product-btns a:nth-child(odd) {
+  transform: translateX(-150px);
+}
+#gs-products .gs-product-btns a:nth-child(even) {
+  transform: translateX(150px);
+}
+#gs-products .gs-product-view,
+#gs-products .gs-product-quick-viewing {
+  width: 50px;
+  height: 50px;
+  background: #ddd;
+  border-radius: 100%;
+}
+
+/*******************************************/
+/********************************************/

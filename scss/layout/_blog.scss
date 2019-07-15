@@ -1,0 +1,91 @@
+/*
+	========================
+	Blog
+	========================
+*/
+.gs-blog-hero{
+	text-transform: uppercase;
+	padding: 60px 0;
+	color: $white;
+	background-size: cover !important;
+	background-position: center !important;
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: $text;
+		opacity: 0.6;
+	}
+
+	.gs-blog-hero-title{
+		font-size: 40px;
+	}
+}
+
+#gs-blog-list{
+	.gs-blog-title{
+		a{
+			text-transform: uppercase;
+			color: $text;
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+
+	.gs-blog-meta{
+		margin: 10px 0 15px;
+		i{
+			margin-right: 5px;
+		}
+		div{
+			margin-right: 10px;
+		}
+		a{
+			color: $text;
+		}
+	}
+	.gs-blog-content{
+		padding: 20px 0;
+	}
+	.gs-blog-button{
+		a{
+			background: $brand_one;
+			border-color: $brand_one;
+			font-size: 14px;
+		}
+		i{
+			margin-left: 5px;
+		}
+	}
+	.gs-blog-box{
+		margin-bottom: 50px;
+	}
+}
+
+
+/*******************************************/
+// Medium devices (tablets, less than 768px)
+/********************************************/
+@media (min-width: 768px) {
+	
+}
+
+/*******************************************/
+// Large devices (desktops, 992px and up)
+/********************************************/
+@media (min-width: 992px) {
+	#gs-blog-list {
+		.gs-blog-title {
+			a{
+				font-size: 25px;
+			}
+		}
+		.gs-blog-box{
+			margin-bottom: 80px;
+		}
+	}
+}

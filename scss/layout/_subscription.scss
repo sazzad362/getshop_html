@@ -1,0 +1,147 @@
+/*
+    ==================================
+        Header Subscribe Popup
+    ==================================
+*/
+.header-subscribe-popup{
+	position: relative;
+	text-align: center;
+	.subscribe-title{
+		font-size: 20px;
+		padding: 10px 0;
+		font-weight: 600;
+	}
+	.subscribe-content{
+		padding: 0 20px;
+	}
+	.subscribe-text-content{
+		line-height: 1.4;
+	}
+	.subscribe-form{
+		padding-bottom: 20px;
+	}
+	input{
+		border-radius: 0;
+		border-color: #d3d3d3;
+		transition: 0.5s;
+		font-size: 14px;
+		&:focus{
+			box-shadow: none;
+			border-color: $brand_one;
+		}
+	}
+
+	.gs-subscribe-btn{
+		background: $brand_one;
+		border-color: $brand_one;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}
+
+.gs-inner-closer{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: $white !important;
+	opacity: 1;
+	border-radius: 100%;
+	top: -15px;
+	right: -15px;
+}
+
+
+/*
+	========================
+	subscribe
+	========================
+*/
+#gs-subscribe{
+	background-color: rgba(43, 56, 62, 0.80);
+    color: #ffffff;
+    padding: 20px 0;
+    form{
+    	// justify-content: center!important;
+	    display: inline-block;
+        text-align: center;
+    	text-transform: uppercase;
+    }
+    .gs-subscribe-title{
+    	text-transform: uppercase;
+    	font-size: 20px;
+    }
+    button{
+    	text-transform: uppercase;
+    	background: $brand_one;
+    	border-color: $brand_one;
+    }
+
+    .gs-social-media-list{
+    	padding-top: 20px;
+    	li{
+    		margin: 0 6px;
+    	}
+    	i{
+    		font-size: 25px;
+    		color: $white;
+    	}
+    }
+}
+
+
+
+
+/*******************************************/
+// Medium devices (tablets, less than 768px)
+/********************************************/
+@media (min-width: 768px) {
+	#gs-subscribe{
+		.gs-social-media-list{
+			li{
+				margin: 0 10px;
+			}
+		}
+		.gs-social-media-list{
+			padding: 0;
+		}
+
+		.btn{
+			width: 100%;
+		}
+	}
+
+	.header-subscribe-popup{
+		text-align: left;
+		.subscribe-title{
+			font-size: 16px;
+			padding: 10px 0 5px;
+		}
+		.gs-subscribe-btn{
+			font-size: 13px;
+		}
+	}
+}
+
+/*******************************************/
+// Large devices (desktops, 992px and up)
+/********************************************/
+@media (min-width: 992px) {
+	#gs-subscribe{
+		form{
+			display: flex;
+			text-align: unset;
+			text-transform: unset;
+		}
+		.btn{
+			width: inherit;
+		}
+	}
+
+	.header-subscribe-popup {
+		.subscribe-title{
+			font-size: 25px;
+			padding-bottom: 15px;
+		}
+	}
+}

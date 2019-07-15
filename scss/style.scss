@@ -1,0 +1,72 @@
+/*------------------------------------------------------------------
+
+  * Template Nam: GetShop
+  * Template UR:  https://getshop.today
+  * Description:  
+  * Author:       
+  * Author URI:   
+  * Version:      
+  * Last update:  2019/20/06
+
+ * -----------------------------------------------------------------*
+ *                         TABLE OF CONTENTS                        *
+ * -----------------------------------------------------------------*
+ *
+	00. Plugins;
+	01. base;
+	02. Header;
+	03. Nav;
+	04. Footer;
+ *
+
+ * -----------------------------------------------------------------*
+ *                        Color Codes                               *
+ * -----------------------------------------------------------------*
+
+	$brand_color: #ff5252;
+
+-------------------------------------------------------------------*/
+
+/*
+	=================================
+		@Loaded All Plugins
+	=================================
+*/
+@import "modules/plugins";
+
+/*
+	=================================
+		@Loaded All Variables
+	=================================
+*/
+@import "variables";
+
+/*
+	=================================
+		@Loaded All Base Style
+	=================================
+*/
+@import "base";
+
+/*
+	=================================
+		@Loaded All Layout Style
+	=================================
+*/
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+
+
+@import "layout/slider";
+@import "layout/products";
+@import "layout/filter";
+@import "layout/sidebar";
+@import "layout/subscription";
+@import "layout/blog";
+@import "layout/contact";
+@import "layout/login";
+@import "layout/profile";
+@import "layout/builder_modules";
+@import "layout/cart";
+@import "layout/checkout";

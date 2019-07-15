@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GetShop</title>
+    <meta name="description" content="Badhon Khan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!--
+      ==============================
+        Load Main Stylesheet File
+      ==============================
+    -->
+    <link rel="stylesheet" href="css/style.css">    
+
+    <!--
+      ==========================
+        Load Modernizr File
+      ==========================
+    -->
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <!--
+      ==========================
+        Core Dependency
+      ==========================
+    -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- For paralax -->
+    <!-- For paralax -->
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jarallax-video.min.js"></script>
+    <!-- For Slider -->
+    <script src="js/jquery.pogo-slider.min.js"></script>
+
+
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <!-- 
+        ================
+           Pogo Slider
+        ================
+    -->
+    
+    <section id="slider_pogo">
+        <div class="pogoSlider pg_area sh-100" id="js-main-slider">
+
+            <div class="pogoSlider-slide" data-transition="fade" data-duration="1000"  data-jarallax data-jarallax-video="https://vimeo.com/335612892">
+                <div class="slider_content left">
+                    <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="750">Getshop Today! Left</h2>
+                    <p class="pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="1500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a class="btn btn-primary pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="1500" href="#">Shop Now</a>
+                    <a class="btn btn-primary pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="1500" href="#">Shop Now</a>
+                </div>
+            </div>
+            <div class="pogoSlider-slide" data-transition="fade" data-duration="1000"  style="background-image:url(img/slide2.jpg);">
+                <div class="slider_content center">
+                    <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="750">Getshop Today! Center</h2>
+                    <p class="pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="1500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a class="btn btn-primary pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="1500" href="#">Shop Now</a>
+                    <a class="btn btn-primary pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="1500" href="#">Shop Now</a>
+                </div>
+            </div>
+            <div class="pogoSlider-slide" data-transition="fade" data-duration="1000"  style="background-image:url(img/slide3.jpg);">
+                <div class="slider_content right">
+                    <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="750">Getshop Today! Right</h2>
+                    <p class="pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="1500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a class="btn btn-primary pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="1500" href="#">Shop Now</a>
+                    <a class="btn btn-primary pogoSlider-slide-element" data-in="slideDown" data-out="slideUp" data-duration="1500" href="#">Shop Now</a>
+                </div>
+            </div>
+            <div style="background-color: #f6efef ; opacity: 0.6;" class="shine_layers s2"></div>
+            <!-- Scroll Bottom -->
+            <div class='icon-scroll'><div/>
+        </div>
+    </section>
+    
+    <script>
+        $(document).ready(function () {
+
+            $('#js-main-slider').pogoSlider({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                displayProgess: false,
+                preserveTargetSize: true,
+                responsive: true,
+                pauseOnHover: false,
+                generateNav: false
+            }).data('plugin_pogoSlider');
+
+        });
+    </script>
+
+    <!--
+      ===============================
+        Active Plugins Main File
+      ===============================
+    -->
+    <!-- <script src="js/app.js"></script> -->
+    
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/*
+	========================
+	Header Section
+	========================
+*/
+#gs-header-top{
+	padding: 5px 0;
+	background: #a3a0a0;
+
+	.gs-header-social-media-list,
+	.gs-shop-card,
+	.gs-header-contact{
+		i{
+			margin-right: 3px;
+		}
+		li{
+			margin-right: 15px;
+		}
+		a{
+			color: $white;
+			font-size: 13px;
+		}
+	}	
+
+	.gs-shop-card{
+		text-align: right;
+		float: right;
+	}
+}
+
+.gs-header-top-content-transparent{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+
+	#gs-header-top,
+	#header-menu{
+		background: transparent;
+	}
+
+	.menu-btn{
+		a{
+			color: #fff;
+			background: transparent;
+			border-color: transparent;
+		}
+	}
+}

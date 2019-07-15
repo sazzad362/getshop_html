@@ -1,0 +1,97 @@
+/**
+ * ---------------------------------------------------------------------------
+ * 0?. Footer Styles
+ * ---------------------------------------------------------------------------
+ */
+#gs-footer-top-wrapper{
+	background: #eaeeef;
+	padding: 18px 0;
+	li{
+		padding: 0 8px;
+	}
+	a{
+		color: $text;
+		transition: $brand_two;
+	}
+}
+
+
+.gs-footer-company-logo{
+	width: 150px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+#gs-footer-menu-wrapper{
+	background: $brand_two;
+	padding: 30px 0;
+	a{
+		color: #bbc2c6;
+	}
+	.gs-footer-block-title{
+		color: $white;
+	    padding-bottom: 10px;
+	}
+	.gs-footer-content-block{
+		min-width: 33.33%;
+	    margin: 15px 0;
+	}
+	.gs-footer-logo{
+		
+	}
+}
+
+.open ul{
+	display: block !important;
+}
+
+
+#copyright{
+	padding: 15px 0;
+	text-align: center;
+	font-size: 13px;
+	i{
+		color: #f55582;
+	}
+}
+
+
+/*******************************************/
+// Custom Query
+/********************************************/
+@media (max-width: 450px) {
+
+		.footer-sub-menu{
+			display: none;
+		}
+
+}
+
+
+
+/*******************************************/
+// Medium devices (tablets, less than 768px)
+/********************************************/
+@media (min-width: 768px) {
+
+		#copyright{
+			text-align: left;
+		}
+
+}
+
+
+/*******************************************/
+// Large devices (desktops, 992px and up)
+/********************************************/
+@media (min-width: 992px) {
+
+	#gs-footer-menu-wrapper{
+		.gs-footer-content-block{
+			min-width: 20%;
+		}
+	}
+
+}
