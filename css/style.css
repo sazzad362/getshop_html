@@ -2353,9 +2353,75 @@ nav .gs-product-img a {
 
 /*
 	========================
-		Progress Bars
+		Slider nav
 	========================
 */
+.gt_slider_nav {
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  max-width: 226px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: calc(100% - 2.143em);
+  overflow-x: scroll;
+}
+.gt_slider_nav ul {
+  margin: 0;
+  padding: 0;
+}
+.gt_slider_nav ul li {
+  list-style: none;
+  padding: 6px 12px;
+  transition: all 0.9s ease;
+  border-bottom: 1px dashed #ddd;
+}
+.gt_slider_nav ul li a {
+  color: #333e48;
+  font-size: 14px;
+  display: block;
+}
+.gt_slider_nav ul li:hover {
+  background: #ddd;
+}
+.gt_slider_nav .gs_dropdown {
+  position: relative;
+}
+.gt_slider_nav .gs_dropdown .vertical_dropdown {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  display: none;
+  opacity: 0;
+}
+.gt_slider_nav .gs_dropdown:hover .vertical_dropdown {
+  opacity: 1;
+  display: block;
+}
+.gt_slider_nav .vertical_menu_title {
+  background-color: #fed700;
+}
+.gt_slider_nav .vertical_menu_title h4 {
+  font-size: 20px;
+  padding: 15px;
+}
+
+/*******************************************/
+/********************************************/
+@media (max-width: 750px) {
+  .gt_slider_nav {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .gt_slider_nav {
+    overflow: initial;
+  }
+}
 /*
 	========================
 	Cart Section
