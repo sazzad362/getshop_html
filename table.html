@@ -31,11 +31,6 @@
     -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- For paralax -->
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jarallax-video.min.js"></script>
-    <!-- For testimonial -->
-    <script src="js/owl.carousel.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -284,393 +279,94 @@
             });// DOM Ready
         </script>
 
-
-
-    <!-- 
-        ==================================
-            Create Nav
-        ==================================
-    -->
-    <section class="gs-blog-hero text-center" style="background: url('img/contact.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    
-                    <h3 class="gs-blog-hero-title">Login & Registration</h3>
-                    <p class="m-0">Home > Login</p>
-                    
+    <section id="sazzad">
+        <div class="waper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="reservation_search">
+                            <h3>Find your table for any occasion</h3>
+                            <form action="#" class="d-lg-flex justify-content-between d-block">
+                              <div class="form-group">
+                                <input type="text" class="form-control ct_form_control" id="date" name="date" placeholder="Date">
+                              </div>
+                              <div class="form-group">
+                                <input type="text" class="form-control ct_form_control" id="time" name="time" placeholder="Time">
+                              </div>
+                              <div class="form-group">
+                                <input type="text" class="form-control ct_form_control" id="people" name="people" placeholder="People">
+                              </div>
+                              <div class="form-group">
+                                <input type="text" class="form-control ct_form_control" id="area" name="area" placeholder="Area....">
+                              </div>
+                              <button type="submit" class="btn btn-primary">Let's Go</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 
-        ==================================
-           Module Filter
-        ==================================
-    -->
-    
-    <div class="blog_details_filter">
-        <a href="javascript:void(0)" id="SidebarTrig">
-            <i class="fa fa-filter" aria-hidden="true"></i> FILTERS
-        </a>
-    </div>
-
-    <div class="gs-sidebar sd_filter">
-        <div class="gs-sidebar-block">
-            <a href="#" class="btn btn-secondary text-uppercase gs_bg_brand_two">Clear Search</a>
-        </div>
-        <div class="gs-sidebar-block">
-            <h4 class="gs-sidebar-title">Category</h4>
-            <ul class="gs-category-list">
-                <li>
-                    <div class="form-group form-check m-0">
-                        <input type="checkbox" class="form-check-input" id="cat-1">
-                        <label class="form-check-label" for="cat-1">Midi Dresses</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="form-group form-check m-0">
-                        <input type="checkbox" class="form-check-input" id="cat-2">
-                        <label class="form-check-label" for="cat-2">Maxi Dresses</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="form-group form-check m-0">
-                        <input type="checkbox" class="form-check-input" id="cat-3">
-                        <label class="form-check-label" for="cat-3">Bodycon Dresses</label>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="gs-sidebar-block">
-            <h4 class="gs-sidebar-title">Dress Size</h4>
-            <ul class="gs-category-list">
-                <li>
-                    <div class="form-group form-check m-0">
-                        <input type="checkbox" class="form-check-input" id="size-1">
-                        <label class="form-check-label" for="size-1">L</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="form-group form-check m-0">
-                        <input type="checkbox" class="form-check-input" id="size-2">
-                        <label class="form-check-label" for="size-2">M</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="form-group form-check m-0">
-                        <input type="checkbox" class="form-check-input" id="size-3">
-                        <label class="form-check-label" for="size-3">S</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="form-group form-check m-0">
-                        <input type="checkbox" class="form-check-input" id="size-4">
-                        <label class="form-check-label" for="size-4">XL</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="form-group form-check m-0">
-                        <input type="checkbox" class="form-check-input" id="size-5">
-                        <label class="form-check-label" for="size-5">XS</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="form-group form-check m-0">
-                        <input type="checkbox" class="form-check-input" id="size-6">
-                        <label class="form-check-label" for="size-6">XXL</label>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="gs-sidebar-block">
-            <h4 class="gs-sidebar-title">Popular tags</h4>
-            <div class="gs-sidebar-tags">
-                <a href="#">
-                    <div class="gs-tag">
-                        New
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gs-tag">
-                        New 1
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gs-tag">
-                        New 2
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gs-tag">
-                        New 3
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gs-tag">
-                        New 4
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gs-tag">
-                        New 5
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        $(document).ready(function() {
-
-            $("#SidebarTrig").click(function () {
-                $(".alpha-bg").fadeToggle();
-                $(".sd_filter").addClass('filtershow');
-            });
-            $(".alpha-bg").click(function () {
-                $(this).fadeOut();
-                $(".sd_filter").removeClass('filtershow');
-            });
-
-        });// DOM Ready
-    </script>
-    
-    <!-- 
-        ==================================
-           Module
-        ==================================
-    -->
-
-<!-- <section id="paralax">
-        <div class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/335612892">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p style="padding: 80px 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos deserunt excepturi molestias, vero dolor laboriosam a, quasi asperiores veniam ad, sint blanditiis dicta maiores ipsa nisi! Corrupti nulla blanditiis maxime!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-<!-- <div id="price_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="ct_price_table">
-                    <svg x="0" y="0" viewBox="0 0 360 220">
-                        <g>
-                            <path fill="#55A7FE" d="M0.732,193.75c0,0,29.706,28.572,43.736-4.512c12.976-30.599,37.005-27.589,44.983-7.061
-                                c8.09,20.815,22.83,41.034,48.324,27.781c21.875-11.372,46.499,4.066,49.155,5.591c6.242,3.586,28.729,7.626,38.246-14.243
-                                s27.202-37.185,46.917-8.488c19.715,28.693,38.687,13.116,46.502,4.832c7.817-8.282,27.386-15.906,41.405,6.294V0H0.48
-                                L0.732,193.75z"></path>
-                        </g>
-                        <text transform="matrix(1 0 0 1 69.7256 116.2686)" fill="#fff" font-size="78.4489">$10</text>
-                        <text transform="matrix(0.9566 0 0 1 197.3096 83.9121)" fill="#fff" font-size="29.0829">.99</text>
-                        <text transform="matrix(1 0 0 1 233.9629 115.5303)" fill="#fff" font-size="15.4128">/Month</text>
-                    </svg>
-                    <div class="pricing-content">
-                        <h3>Standard</h3>
-                        <ul class="pricing-content">
-                            <li><b>50GB</b> Disk Space</li>
-                            <li><b>50</b> Email Accounts</li>
-                            <li><b>50GB</b> Bandwidth</li>
-                            <li><b>10</b> Subdomains</li>
-                            <li><b>15</b> Domains</li>
-                        </ul>
-                        <a href="#" class="pricingTable-btn">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="ct_price_table">
-                    <svg x="0" y="0" viewBox="0 0 360 220">
-                        <g>
-                            <path fill="#55A7FE" d="M0.732,193.75c0,0,29.706,28.572,43.736-4.512c12.976-30.599,37.005-27.589,44.983-7.061
-                                c8.09,20.815,22.83,41.034,48.324,27.781c21.875-11.372,46.499,4.066,49.155,5.591c6.242,3.586,28.729,7.626,38.246-14.243
-                                s27.202-37.185,46.917-8.488c19.715,28.693,38.687,13.116,46.502,4.832c7.817-8.282,27.386-15.906,41.405,6.294V0H0.48
-                                L0.732,193.75z"></path>
-                        </g>
-                        <text transform="matrix(1 0 0 1 69.7256 116.2686)" fill="#fff" font-size="78.4489">$10</text>
-                        <text transform="matrix(0.9566 0 0 1 197.3096 83.9121)" fill="#fff" font-size="29.0829">.99</text>
-                        <text transform="matrix(1 0 0 1 233.9629 115.5303)" fill="#fff" font-size="15.4128">/Month</text>
-                    </svg>
-                    <div class="pricing-content">
-                        <h3>Standard</h3>
-                        <ul class="pricing-content">
-                            <li><b>50GB</b> Disk Space</li>
-                            <li><b>50</b> Email Accounts</li>
-                            <li><b>50GB</b> Bandwidth</li>
-                            <li><b>10</b> Subdomains</li>
-                            <li><b>15</b> Domains</li>
-                        </ul>
-                        <a href="#" class="pricingTable-btn">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="ct_price_table">
-                    <svg x="0" y="0" viewBox="0 0 360 220">
-                        <g>
-                            <path fill="#55A7FE" d="M0.732,193.75c0,0,29.706,28.572,43.736-4.512c12.976-30.599,37.005-27.589,44.983-7.061
-                                c8.09,20.815,22.83,41.034,48.324,27.781c21.875-11.372,46.499,4.066,49.155,5.591c6.242,3.586,28.729,7.626,38.246-14.243
-                                s27.202-37.185,46.917-8.488c19.715,28.693,38.687,13.116,46.502,4.832c7.817-8.282,27.386-15.906,41.405,6.294V0H0.48
-                                L0.732,193.75z"></path>
-                        </g>
-                        <text transform="matrix(1 0 0 1 69.7256 116.2686)" fill="#fff" font-size="78.4489">$10</text>
-                        <text transform="matrix(0.9566 0 0 1 197.3096 83.9121)" fill="#fff" font-size="29.0829">.99</text>
-                        <text transform="matrix(1 0 0 1 233.9629 115.5303)" fill="#fff" font-size="15.4128">/Month</text>
-                    </svg>
-                    <div class="pricing-content">
-                        <h3>Standard</h3>
-                        <ul class="pricing-content">
-                            <li><b>50GB</b> Disk Space</li>
-                            <li><b>50</b> Email Accounts</li>
-                            <li><b>50GB</b> Bandwidth</li>
-                            <li><b>10</b> Subdomains</li>
-                            <li><b>15</b> Domains</li>
-                        </ul>
-                        <a href="#" class="pricingTable-btn">Order Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="accordion gt_accordion" id="accordionExample">
-              <div class="card">
-                <div class="card-header collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Collapsible Group Item #1
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Collapsible Group Item #2
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Collapsible Group Item #3
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-</div>
- -->
-
-<!--  <section id="images">
-     <div class="container">
-         <div class="row">
-             <div class="col-md-4">
-                 <div class="image_hover eRight">
-                     <img src="img/download.jpg" class="w-100" alt="">
-                     <div class="text_waper">
-                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem veritatis, necessitatibus, numquam aliquam assumenda.</p>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-md-4">
-                 <div class="image_hover eBottom img_transform_rotate">
-                     <img src="img/download.jpg" class="w-100" alt="">
-                     <div class="text_waper">
-                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae rem veritatis, necessitatibus, numquam aliquam assumenda.</p>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </section> -->
-<section id="dummy">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                
-                <!-- ================================
-                        Testimonial Code start -->
-                <div id="testimonial-slider" class="owl-carousel ct_owl_area">
-                    <div class="ct_testimonial">
-                        <div class="pic">
-                            <img src="img/img-1.jpg" alt="">
+    <section id="table">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="single_table">
+                        <div class="media">
+                          <img src="img/4.jpg" class="align-self-start mr-3" alt="Table Image">
+                          <div class="media-body">
+                            <h5>Soho</h5>
+                            <p>£10.00</p>
+                            <p class="mt-2 mb-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                          </div>
                         </div>
-                        <h3 class="testimonial-title">Williamson</h3>
-                        <small class="post">Web Designer</small>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare eros. Proin nec pulvinar augue, at.
-                        </p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div> <!-- Single Testimonial -->
- 
-                    <div class="ct_testimonial">
-                        <div class="pic">
-                            <img src="img/img-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single_table">
+                        <div class="media">
+                          <img src="img/4.jpg" class="align-self-start mr-3" alt="Table Image">
+                          <div class="media-body">
+                            <h5>Soho</h5>
+                            <p>£10.00</p>
+                            <p class="mt-2 mb-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                          </div>
                         </div>
-                        <h3 class="testimonial-title">kristiana</h3>
-                        <small class="post">Web Developer</small>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ornare eros. Proin nec pulvinar augue, at.
-                        </p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div> <!-- Single Testimonial -->
-                </div> 
-                <script>
-                   $(document).ready(function(){
-                       $("#testimonial-slider").owlCarousel({
-                       loop:true,
-                       margin:25,
-                       nav:false,
-                       dots: false,
-                       smartSpeed:2500,
-                       autoplay:true,
-                       autoplayTimeout:6000,
-                       autoplayHoverPause:false,
-                       responsiveClass:true,
-                       responsive:{
-                             0:{items:1},
-                             600:{items:1},
-                             1000:{ items:3}
-                           }
-                       });
-                   });
-                </script>
-                <!-- ================================
-                        Testimonial Code End -->
-
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single_table">
+                        <div class="media">
+                          <img src="img/4.jpg" class="align-self-start mr-3" alt="Table Image">
+                          <div class="media-body">
+                            <h5>Soho</h5>
+                            <p>£10.00</p>
+                            <p class="mt-2 mb-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single_table">
+                        <div class="media">
+                          <img src="img/4.jpg" class="align-self-start mr-3" alt="Table Image">
+                          <div class="media-body">
+                            <h5>Soho</h5>
+                            <p>£10.00</p>
+                            <p class="mt-2 mb-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="counters">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div data-value="50" data-preset="circle" style="width:100%;height:30px;margin-top:30px" class="ldBar auto"></div>
-            </div>
-        </div>
-    </div>
-</section>
     
     <!-- 
         ==================================
