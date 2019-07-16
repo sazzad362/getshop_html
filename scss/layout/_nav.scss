@@ -91,6 +91,7 @@ nav{
 }
 
 
+
 /*
 	==============================
 	Create Fullscreen Maga Menu 1
@@ -253,6 +254,24 @@ nav{
 	        right: 25px;
 	    }
 	}
+
+	// .pushy{
+	// 	width: 100%;
+	// 	background: rgba(25, 25, 24, 0.90)
+	// }
+
+	.stellarnav.mobile.left>ul, .stellarnav.mobile.right>ul{
+	    max-width: 100%;
+	    background: rgba(255, 255, 255, 0.90);
+	}
+	.stellarnav.mobile ul, .stellarnav ul ul{
+		background: transparent;
+	}
+	
+	.pushy,
+	.stellarnav.mobile>ul>li>a{
+	    font-weight: 600;
+	}
 }
 
 /*
@@ -261,7 +280,10 @@ nav{
 	========================
 */
 .gs-fullscreen-menu{
-
+	.menu-logo{
+		width: 150px;
+		margin: 0 auto;
+	}
 	.gs-fl-menu-close{
 		color: $text;
 		font-size: 30px;
