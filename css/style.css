@@ -576,6 +576,20 @@ nav .gs-product-img a {
   .gs-fullscreen-maga-menu .menu-btn {
     right: 25px;
   }
+
+  .stellarnav.mobile.left > ul, .stellarnav.mobile.right > ul {
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .stellarnav.mobile ul, .stellarnav ul ul {
+    background: transparent;
+  }
+
+  .pushy,
+  .stellarnav.mobile > ul > li > a {
+    font-weight: 600;
+  }
 }
 /*
 	========================
@@ -586,6 +600,10 @@ nav .gs-product-img a {
   /* OPEN / CLOSE BTNS */
   /* OVERLAY */
   /* RESPONSIVE */
+}
+.gs-fullscreen-menu .menu-logo {
+  width: 150px;
+  margin: 0 auto;
 }
 .gs-fullscreen-menu .gs-fl-menu-close {
   color: #242424;
