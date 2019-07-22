@@ -321,6 +321,9 @@
 			&:hover{
 				background: #ddd;
 			}
+			&:last-child{
+				border-bottom: 0;
+			}
 		}
 	}
 	.gs_dropdown{
@@ -350,6 +353,16 @@
 	}
 }
 
+.gt_slider_nav_center{
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 20px;
+	.vertical_menu_title{
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+}
+
 
 /*******************************************/
 // Medium devices (mobile, less than 768px)
@@ -362,5 +375,8 @@
 @media (min-width: 1200px) {
 	.gt_slider_nav{
 		overflow: initial;
+	}
+	.gt_slider_nav_center{
+		height: auto;
 	}
 }

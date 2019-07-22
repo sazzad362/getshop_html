@@ -2381,6 +2381,9 @@ nav .gs-product-img a {
 .gt_slider_nav ul li:hover {
   background: #ddd;
 }
+.gt_slider_nav ul li:last-child {
+  border-bottom: 0;
+}
 .gt_slider_nav .gs_dropdown {
   position: relative;
 }
@@ -2405,6 +2408,16 @@ nav .gs-product-img a {
   padding: 15px;
 }
 
+.gt_slider_nav_center {
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+}
+.gt_slider_nav_center .vertical_menu_title {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 /*******************************************/
 /********************************************/
 @media (max-width: 750px) {
@@ -2415,6 +2428,10 @@ nav .gs-product-img a {
 @media (min-width: 1200px) {
   .gt_slider_nav {
     overflow: initial;
+  }
+
+  .gt_slider_nav_center {
+    height: auto;
   }
 }
 /*
@@ -2677,3 +2694,5 @@ nav .gs-product-img a {
 .reservation_search .form-group {
   margin-bottom: 0;
 }
+
+/*# sourceMappingURL=style.css.map */
