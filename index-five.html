@@ -11,27 +11,18 @@
 
     <!--
       ==============================
+        Load Google Fonts
+      ==============================
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+    <!--
+      ==============================
         Load Main Stylesheet File
       ==============================
     -->
-    <link rel="stylesheet" href="css/pushy.css">    
-    <link rel="stylesheet" href="css/style.css">    
-
-    <!--
-      ==========================
-        Load Modernizr File
-      ==========================
-    -->
-    <script src="js/modernizr.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-
-    <!--
-      ==========================
-        Core Dependency
-      ==========================
-    -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">   
 
   </head>
   <body>
@@ -45,7 +36,7 @@
             Header Subscribe Popup
         ==================================
     -->
-<!--     <div class="header-subscribe-popup">
+    <div class="header-subscribe-popup">
 
         <div id="myModalCenter" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -89,17 +80,8 @@
             </div>
           </div>
         </div>
-
-        <script>
-            $(document).ready(function(){
-                setTimeout(function(){
-                    $('#myModalCenter').modal('show');
-                },1000);
-            })
-        </script>
-
     </div>
- -->
+
 
     <div class="gs-header-top-content-transparent">
 
@@ -166,13 +148,13 @@
                             <div class="gs-shop-card">
                                 <ul class="d-flex justify-content-end">
                                     <li>
-                                        <a href="#">
+                                        <a href="cart.html">
                                             <i class="fa fa-shopping-cart"></i>
                                             Cart
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="login.html">
                                             <i class="fa fa-unlock-alt"></i>
                                             Login
                                         </a>
@@ -218,32 +200,30 @@
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </a>
                 <div class="menu">
-                    <ul>
+                    <div class="menu-logo">
+                        <img class="img-fluid" src="img/logo.png" alt="logo">
+                    </div>
+                    <ul class="mt-4">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li>
+                            <a href="cart.html">
+                                <i class="fa fa-shopping-cart"></i>
+                                Cart
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-unlock-alt"></i>
+                                Login
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <script>
-            $(document).ready(function () {
-                $(".menu-btn a").click(function () {
-                    $(".overlay").fadeToggle(200);
-                    $(this).toggleClass('btn-open').toggleClass('btn-close');
-                });
-                $('.overlay').on('click', function () {
-                    $(".overlay").fadeToggle(200);
-                    $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-                });
-                $('.menu a').on('click', function () {
-                    $(".overlay").fadeToggle(200);
-                    $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-                });
-            });
-        </script>
-
     </div>
 
 
@@ -307,33 +287,6 @@
             </div>
         </div>
     </section>
-        <script src="js/owl.carousel.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('.owl-carousel').owlCarousel({
-                    loop:true,
-                    margin:0,
-                    nav:true,
-                    items:1,
-                    autoplay:true,
-                    animateOut: 'fadeOut',
-                    animateIn: 'fadeIn',
-                    navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-                    responsive:{
-                        0:{
-                            items:1
-                        },
-                        600:{
-                            items:1
-                        },
-                        1000:{
-                            items:1
-                        }
-                    }
-                })
-            });// DOM Ready
-        </script>
-
 
     <!-- 
         ==================================
@@ -1078,59 +1031,6 @@
             </div>
         </div>
     </section>
-    <script>
-        $(document).ready(function() {
-            if($(window).width() < 450){
-                $( "#menuOne" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-                $( "#menuTwo" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-                $( "#menuThree" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-                $( "#menuFour" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-            }
-        });// DOM Ready
-    </script>
-
-
-    <!-- <section id="gs-footer-top-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="gs-company-policies">
-                        <ul class="d-md-flex flex-md-wrap">
-                            <li>
-                                <a href="#">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a href="#">Refund Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">Billing System</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="gs-company-information">
-                        <ul class="d-md-flex flex-md-wrap justify-content-md-end">
-                            <li>
-                                <a href="#">Company Information</a>
-                            </li>
-                            <li>
-                                <a href="#">Careers</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <footer id="copyright">
         <div class="container">
@@ -1147,11 +1047,18 @@
 
 
     <!--
+      ==========================
+        Load Dependency
+      ==========================
+    -->
+    <script src="js/plugins.js"></script>
+
+    <!--
       ===============================
         Active Plugins Main File
       ===============================
     -->
-    <!-- <script src="js/app.js"></script> -->
+    <script src="js/app.js"></script>
     
   </body>
 </html>

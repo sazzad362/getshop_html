@@ -7,7 +7,19 @@
 	position: relative;
 	background: #f3f3f3;
 }
+.gs_right_menu{
+	.fa-bars{
+		display: none;
+	}
+}
 nav{
+	li{
+		a{
+			&:hover{
+				color: $brand_two;
+			}
+		}
+	}
 	.logo{
 		position: absolute;
 	    top: 50%;
@@ -48,6 +60,10 @@ nav{
 	.submenu-links{
 		padding: 0 !important;
 		margin: 15px 0 !important;
+		color: #777 !important;
+		&:hover{
+			color: $brand_two !important;
+		}
 	}
 	.submenu-link-box{
 		width: 250px;
@@ -453,6 +469,7 @@ nav{
 		padding: 10px 15px;
 	    display: block;
 	    &:hover{
+	    	color: $white;
 	    	background: $brand_one;
 	    }
 	}
@@ -492,6 +509,7 @@ nav{
 
 	.gs-sub-menu-list{
 		a{
+			color: $white !important;
 			min-width: 200px;
 		    margin: 0 !important;
 		    padding: 15px !important;
@@ -500,6 +518,14 @@ nav{
 		    	background: $brand_one;
 		    }
 	    }
+	}
+	.submenu-links{
+		color: $white !important;
+		padding: 5px !important;
+		&:hover{
+			color: $white !important;
+			background: $brand_one !important;
+		}
 	}
 }
 

@@ -9,28 +9,21 @@
     
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+
+    <!--
+      ==============================
+        Load Google Fonts
+      ==============================
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
     <!--
       ==============================
         Load Main Stylesheet File
       ==============================
     -->
-    <link rel="stylesheet" href="css/style.css">    
-
-    <!--
-      ==========================
-        Load Modernizr File
-      ==========================
-    -->
-    <script src="js/modernizr.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-
-    <!--
-      ==========================
-        Core Dependency
-      ==========================
-    -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
@@ -250,16 +243,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <!-- <div class="gs-shop-card d-md-none">
-                                <a href="#">
-                                    <i class="fa fa-shopping-cart"></i>
-                                    Cart
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-unlock-alt"></i>
-                                    Login
-                                </a>
-                            </div> -->
                         </div>
                     </nav>    
 
@@ -269,18 +252,6 @@
             </div>
         </div>
     </div>
-        <script src="js/stellarnav.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('.stellarnav').stellarNav({ position: 'right' });
-                var gsMagaMenu = $('#gs-maga-menu').innerWidth();
-                // var gsMagaMenu = $('#gs-maga-menu').innerWidth();
-                $('#gs-maga-menu .gs-maga ul.show-maga')
-                .css("width", gsMagaMenu);
-            });// DOM Ready
-        </script>
-
-
 
     <!-- 
         ==================================
@@ -497,60 +468,7 @@
             </div>
         </div>
     </section>
-    <script>
-        $(document).ready(function() {
-            if($(window).width() < 450){
-                $( "#menuOne" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-                $( "#menuTwo" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-                $( "#menuThree" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-                $( "#menuFour" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-            }
-        });// DOM Ready
-    </script>
-
-
-    <!-- <section id="gs-footer-top-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="gs-company-policies">
-                        <ul class="d-md-flex flex-md-wrap">
-                            <li>
-                                <a href="#">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a href="#">Refund Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">Billing System</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="gs-company-information">
-                        <ul class="d-md-flex flex-md-wrap justify-content-md-end">
-                            <li>
-                                <a href="#">Company Information</a>
-                            </li>
-                            <li>
-                                <a href="#">Careers</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    
     <footer id="copyright">
         <div class="container">
             <div class="row">
@@ -565,12 +483,20 @@
     </footer>
 
 
+
+    <!--
+      ==========================
+        Load Dependency
+      ==========================
+    -->
+    <script src="js/plugins.js"></script>
+    
     <!--
       ===============================
         Active Plugins Main File
       ===============================
     -->
-    <!-- <script src="js/app.js"></script> -->
+    <script src="js/app.js"></script>
     
   </body>
 </html>

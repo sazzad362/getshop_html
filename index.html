@@ -11,27 +11,18 @@
 
     <!--
       ==============================
+        Load Google Fonts
+      ==============================
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+    <!--
+      ==============================
         Load Main Stylesheet File
       ==============================
     -->
-    <link rel="stylesheet" href="css/pushy.css">    
-    <link rel="stylesheet" href="css/style.css">    
-
-    <!--
-      ==========================
-        Load Modernizr File
-      ==========================
-    -->
-    <script src="js/modernizr.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-
-    <!--
-      ==========================
-        Core Dependency
-      ==========================
-    -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">   
 
   </head>
   <body>
@@ -46,9 +37,6 @@
         ==================================
     -->
     <div class="header-subscribe-popup">
-
-        <!-- Modal -->
-
         <div id="myModalCenter" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content container">
@@ -91,15 +79,6 @@
             </div>
           </div>
         </div>
-
-        <script>
-            $(document).ready(function(){
-                setTimeout(function(){
-                    $('#myModalCenter').modal('show');
-                },1000);
-            })
-        </script>
-
     </div>
 
 
@@ -195,8 +174,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
-
                     <nav>
                         <div id="gs-maga-menu" class="stellarnav">
                             <div class="logo">
@@ -262,48 +239,6 @@
                                         </li>
                                     </ul>    
                                 </li>
-                                <li class="gs-maga"><a href="#">Products</a>
-                                    <ul class="show-maga">
-                                        <li>
-                                            <div class="container m-md-0 m-lg-auto">
-                                                <div class="row">
-
-                                                    <div class="col-sm-12 col-md-6 col-lg-4">
-                                                        <h5 class="submenu-cat-title">Browse</h5>
-                                                        <a class="p-0" href="#"><img src="img/slider.jpg" class="img-fluid pt-4 mb-4" alt=""></a>
-                                                        <a class="p-0" href="#"><img src="img/slider.jpg" class="img-fluid mb-4" alt=""></a>
-                                                    </div>
-                                                    <div class="col-sm-1 col-md-4 col-lg-4">
-                                                        <div class="submenu-link-box">
-                                                            <h5 class="submenu-cat-title">Browse</h5>
-                                                            <a class="p-0" href="#"><img src="img/slider.jpg" class="img-fluid pt-4 mb-4" alt=""></a>
-                                                            <a class="p-0" href="#"><img src="img/slider.jpg" class="img-fluid mb-4" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-1 col-md-4 col-lg-4">
-                                                        <article class="gs-product-box gs-product-box-two gs-product-height-auto text-center">
-                                                            <div class="product-wrapper">
-                                                                <div class="gs-product-img">
-                                                                    <a href="#"><img class="img-fluid" src="img/p2-img.jpg" alt=""></a>
-                                                                </div>
-
-                                                                <div class="gs-product-price">
-                                                                    <a class="p-0" href="#"><strong> &pound;10</strong></a>
-                                                                </div>
-
-                                                                <div class="gs-product-text pt-0">
-                                                                    <a class="p-0" href="#"><p class="mt-2">WOMENS SATIN DIAMANTE CLUTCH </p></a>
-                                                                </div>
-
-                                                                <div class="pt-3 pb-3"></div>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>    
-                                </li>
                                 <li class="drop-left">
                                     <a href="blog.html">Blog</a>
                                     <ul>
@@ -316,284 +251,28 @@
                                         </li>
                                     </ul>
                                 </li>
+
+                                <li>
+                                    <a class="ml-xl-4" href="cart.html">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Cart
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <i class="fa fa-unlock-alt"></i>
+                                        Login
+                                    </a>
+                                </li>
+
                             </ul>
-                            <!-- <div class="gs-shop-card d-md-none">
-                                <a href="#">
-                                    <i class="fa fa-shopping-cart"></i>
-                                    Cart
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-unlock-alt"></i>
-                                    Login
-                                </a>
-                            </div> -->
+
                         </div>
                     </nav>    
-
-
-
                 </div>
             </div>
         </div>
     </div>
-        <script src="js/stellarnav.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('.stellarnav').stellarNav({ position: 'right' });
-                var gsMagaMenu = $('#gs-maga-menu').innerWidth();
-                // var gsMagaMenu = $('#gs-maga-menu').innerWidth();
-                $('#gs-maga-menu .gs-maga ul.show-maga')
-                .css("width", gsMagaMenu);
-            });// DOM Ready
-        </script>
-
-
-
-    <!-- 
-        ==================================
-            Create Nav Left 2
-        ==================================
-    -->
-
-    <!-- <div id="header-menu" class="pt-2 pb-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav>
-                        <div id="gs-maga-menu" class="stellarnav">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="login">
-                                </a>
-                            </div>
-                            <button class="left-menu-btn btn btn-light">&#9776;</button>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Pushy Menu -->
-<!--     <nav class="pushy pushy-right" data-menu-btn-class=".left-menu-btn">
-        <div class="pushy-content">
-            <ul>
-                <li class="pushy-link">
-                    <a href="index.html">Home</a> 
-                </li>
-                <li class="pushy-link">
-                    <a href="shop.html">Shop</a>
-                </li>
-                <li class="pushy-link">
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li class="pushy-submenu">
-                    <button id="first-link">Submenu 1</button>
-                    <ul>
-                        <li class="pushy-submenu">
-                            <button>Sub-Submenu 1</button>
-                            <ul>
-                                <li class="pushy-link"><a href="#">Item 1</a></li>
-                                <li class="pushy-link"><a href="#">Item 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="pushy-submenu">
-                            <button>Sub-Submenu 2</button>
-                            <ul>
-                                <li class="pushy-link"><a href="#">Item 1</a></li>
-                                <li class="pushy-link"><a href="#">Item 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="pushy-link"><a href="#">Item 1</a></li>
-                        <li class="pushy-link"><a href="#">Item 2</a></li>
-                    </ul>
-                </li>
-                <li class="pushy-submenu">
-                    <button>Submenu 2</button>
-                    <ul>
-                        <li class="pushy-link"><a href="#">Item 1</a></li>
-                        <li class="pushy-link"><a href="#">Item 2</a></li>
-                        <li class="pushy-link"><a href="#">Item 3</a></li>
-                    </ul>
-                </li>
-                <li class="pushy-submenu">
-                    <button>Submenu 3</button>
-                    <ul>
-                        <li class="pushy-link"><a href="#">Item 1</a></li>
-                        <li class="pushy-link"><a href="#">Item 2</a></li>
-                        <li class="pushy-link"><a href="#">Item 3</a></li>
-                    </ul>
-                </li>
-                <li class="pushy-link"><a href="#">Item 1</a></li>
-                <li class="pushy-link"><a href="#">Item 2</a></li>
-                <li class="pushy-link"><a href="#">Item 3</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="site-overlay"></div>
-    <script src="js/pushy.min.js"></script> -->
-
-
-
-    <!-- 
-        ==================================
-            Create Fullscreen Nav 1
-        ==================================
-    -->
-
-<!--     <div id="header-menu" class="pt-2 pb-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav>
-                        <div id="gs-maga-menu" class="stellarnav">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="login">
-                                </a>
-                            </div>
-                            <div class="menu-btn">
-                                <a class="btn-open left-menu-btn btn btn-light" href="javascript:void(0)">&#9776;</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="gs-fullscreen-maga-menu">
-        <div class="overlay">
-            <a class="gs-fl-menu-close" href="javascript:void(0)">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </a>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Designers</a></li>
-                            <li><a href="#">Developers</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="shop.html">Shop</a>
-                        <ul>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Apps</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Seo</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#">Work</a>
-                        <ul>
-                            <li><a href="#">Web</a></li>
-                            <li><a href="#">Graphics</a></li>
-                            <li><a href="#">Apps</a></li>
-                            <li><a href="#">Seo</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="blog.html">Blog</a>
-                        <ul>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Codepen</a></li>
-                            <li><a href="#">Behance</a></li>
-                            <li><a href="#">Dribbble</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <script>
-        $(document).ready(function () {
-
-            $(".menu-btn a").click(function () {
-                $(".overlay").fadeToggle(200);
-                $(this).toggleClass('btn-open').toggleClass('btn-close');
-            });
-
-            $('.overlay').on('click', function () {
-                $(".overlay").fadeToggle(200);
-                $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-            });
-
-            $('.menu a').on('click', function () {
-                $(".overlay").fadeToggle(200);
-                $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-            });
-
-        });
-    </script> -->
-
-
-
-    <!-- 
-        ==================================
-            Create Fullscreen Nav 2
-        ==================================
-    -->
-
-<!--     <div id="header-menu" class="pt-2 pb-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav>
-                        <div id="gs-maga-menu" class="stellarnav">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="login">
-                                </a>
-                            </div>
-                            <div class="menu-btn">
-                                <a class="btn-open left-menu-btn btn btn-light" href="javascript:void(0)">&#9776;</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="gs-fullscreen-menu">
-        <div class="overlay">
-            <a class="gs-fl-menu-close" href="javascript:void(0)">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </a>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <script>
-        $(document).ready(function () {
-            $(".menu-btn a").click(function () {
-                $(".overlay").fadeToggle(200);
-                $(this).toggleClass('btn-open').toggleClass('btn-close');
-            });
-            $('.overlay').on('click', function () {
-                $(".overlay").fadeToggle(200);
-                $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-            });
-            $('.menu a').on('click', function () {
-                $(".overlay").fadeToggle(200);
-                $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-            });
-        });
-    </script> -->
-
-
-
-
-
-
 
     <!-- 
         ==================================
@@ -654,33 +333,6 @@
             </div>
         </div>
     </section>
-        <script src="js/owl.carousel.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('.owl-carousel').owlCarousel({
-                    loop:true,
-                    margin:0,
-                    nav:true,
-                    items:1,
-                    autoplay:true,
-                    animateOut: 'fadeOut',
-                    animateIn: 'fadeIn',
-                    navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-                    responsive:{
-                        0:{
-                            items:1
-                        },
-                        600:{
-                            items:1
-                        },
-                        1000:{
-                            items:1
-                        }
-                    }
-                })
-            });// DOM Ready
-        </script>
-
 
     <!-- 
         ==================================
@@ -1425,59 +1077,6 @@
             </div>
         </div>
     </section>
-    <script>
-        $(document).ready(function() {
-            if($(window).width() < 450){
-                $( "#menuOne" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-                $( "#menuTwo" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-                $( "#menuThree" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-                $( "#menuFour" ).on( "click", function() {
-                  $( this ).toggleClass( "open" );
-                });
-            }
-        });// DOM Ready
-    </script>
-
-
-    <!-- <section id="gs-footer-top-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="gs-company-policies">
-                        <ul class="d-md-flex flex-md-wrap">
-                            <li>
-                                <a href="#">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a href="#">Refund Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">Billing System</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="gs-company-information">
-                        <ul class="d-md-flex flex-md-wrap justify-content-md-end">
-                            <li>
-                                <a href="#">Company Information</a>
-                            </li>
-                            <li>
-                                <a href="#">Careers</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <footer id="copyright">
         <div class="container">
@@ -1494,11 +1093,18 @@
 
 
     <!--
+      ==========================
+        Load Dependency
+      ==========================
+    -->
+    <script src="js/plugins.js"></script>
+    
+    <!--
       ===============================
         Active Plugins Main File
       ===============================
     -->
-    <!-- <script src="js/app.js"></script> -->
+    <script src="js/app.js"></script>
     
   </body>
 </html>
